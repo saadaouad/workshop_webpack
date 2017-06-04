@@ -1,2 +1,2 @@
-# workspace_react_with_webpack
-Build a workspace React with Webpack
+# Getting started with webpack
+Build a workshop of webpack
