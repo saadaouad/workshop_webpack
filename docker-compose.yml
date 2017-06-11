@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  workshop_webpack:
+    image: workshop_webpack
+    build: .
+    ports:
+      - 3000:3000
