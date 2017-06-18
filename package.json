@@ -4,7 +4,8 @@
   "description": "Build a workshop of webpack",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --optimize-minimize"
+    "build": "webpack --optimize-minimize",
+    "start": "webpack-dev-server"
   },
   "devDependencies": {
     "babel-loader": "^7.0.0",
