@@ -1,8 +1,14 @@
 FROM node:6-alpine
+
 ENV NODE_ENV production
-WORKDIR /usr/src/app
-COPY ["package.json", "npm-shrinkwrap.json*", "./"]
-RUN npm install --production --silent && mv node_modules ../
-COPY . .
-EXPOSE 3000
+
+WORKDIR /var/www
+
+COPY package.json /var/www/
+RUN npm install
+
+COPY . /var/www/
+
+EXPOSE 9000
+
 CMD node index.js
