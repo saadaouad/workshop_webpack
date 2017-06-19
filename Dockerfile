@@ -1,14 +1,14 @@
 FROM node:6-alpine
 
-ENV NODE_ENV production
-
 WORKDIR /var/www
 
 COPY package.json /var/www/
-RUN npm install
+RUN npm install && npm cache clean
 
 COPY . /var/www/
 
-EXPOSE 9000
+RUN npm build
 
-CMD node index.js
+EXPOSE 8080
+
+CMD node app/index.js
