@@ -16,6 +16,10 @@ module.exports = {
         loaders: ['style-loader', 'css-loader', 'sass-loader'],
         test: /\.scss$/,
       },
+      // {
+      //   loaders: ['url-loader'],
+      //   test: /\.png$/,
+      // }
     ],
   },
 };
