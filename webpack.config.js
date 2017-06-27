@@ -6,6 +6,12 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  devServer: {
+    inline: true,
+    host: '0.0.0.0',
+    port: 9000,
+    historyApiFallback: true
+  },
   module: {
     loaders: [
       {

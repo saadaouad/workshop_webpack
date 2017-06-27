@@ -4,7 +4,7 @@ services:
   workshop_webpack:
     build: .
     ports:
-      - 8080:8080
+      - 9000:9000
     volumes:
       - .:/var/www
       - /var/www/node_modules
