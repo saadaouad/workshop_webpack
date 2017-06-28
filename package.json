@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --optimize-minimize",
     "dev": "webpack-dev-server --config ./webpack.config.js",
-    "start": "npm run dev"
+    "start": "npm run dev "
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
